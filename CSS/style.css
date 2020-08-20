@@ -1,0 +1,201 @@
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: space-mono, source-sans-pro, roboto;
+    background-color: rgb(231, 235, 235);
+    text-align: center;
+    line-height: 1.5;
+    color: #5c5b5b;
+    
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    margin-top: 0;
+}
+
+
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+    margin: 0;
+}
+
+.portfolio-image {
+    width: 100%;
+    height: auto;
+}
+
+.name,
+.main-nav {
+    display: block;
+}
+
+.main-nav li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-nav a {
+    padding: 10px 15px;
+}
+
+.footer-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    float: left;
+    margin-left: 15px;
+}
+
+.footer-nav li {
+    font-weight: bold;
+}
+
+.top {
+    float: right;
+    margin-top: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* ---- Layout Containers ---- */
+
+.container {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 20px;
+}
+
+.main-header {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    text-align: center;
+    background-color: #dfdfdf;
+}
+
+.main-footer {
+    display: block;
+    text-align: center;
+    border-top: solid rgb(189, 193, 197);
+}
+
+.contact {
+    text-align: center;
+
+}
+
+
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (max-width: 767px) {
+    .footer-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .profile-image {
+        float: right;
+        width: 40%;
+    }
+
+    .main-header p {
+        text-align: left;
+    }
+
+    .main-nav li{
+        display: inline-block;
+    }
+
+    .card {
+        float: left;
+        width: 50%;
+    }
+
+    .top {
+        display: none;
+    }
+
+    .footer-nav {
+        margin: 15px 10px 0 0;
+    }
+
+    .footer-nav li {
+        float: right;
+        display: inline-block;
+    }    
+}
+
+
+
+@media (min-width: 1024px) {
+
+
+    .card {
+        width: 33%;
+    }
+
+    .top {
+        display: none;
+    }
+
+    .footer-nav {
+        margin: 15px 10px 0 0;
+    }
+
+    .footer-nav li {
+        float: right;
+        display: inline-block;
+        
+    }
+
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
