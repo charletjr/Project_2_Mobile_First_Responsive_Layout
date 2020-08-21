@@ -28,13 +28,17 @@ a {
 }
 
 h1,
-h2 {
+h2  {
     font-weight: bold;
     color: rgb(0, 0, 0);
 }
 
 h3 {
     margin-top: 0;
+}
+
+img {
+    max-width: 100%; 
 }
 
 
@@ -84,7 +88,7 @@ h3 {
 .top {
     float: right;
     margin-top: 8px;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
 }
 
@@ -94,6 +98,7 @@ h3 {
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 20px;
+    overflow: auto;
 }
 
 .main-header {
@@ -151,6 +156,7 @@ h3 {
     .card {
         float: left;
         width: 50%;
+        padding: 0 10px;
     }
 
     .top {
@@ -171,6 +177,13 @@ h3 {
 
 @media (min-width: 1024px) {
 
+    .name {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+    }
 
     .card {
         width: 33%;
