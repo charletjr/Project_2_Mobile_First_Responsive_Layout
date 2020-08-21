@@ -181,7 +181,7 @@ img {
     }
 
     .main-nav {
-        float: right;
+        text-align: right;
     }
 
     .card {
